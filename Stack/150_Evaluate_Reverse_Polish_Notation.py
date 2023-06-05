@@ -1,6 +1,7 @@
 from typing import List
 
-
+# We jsut check for chars to be +, -, * or / and then take two previous values from stack and do the math operation.
+# If it's not mathematical operation we just append stack.
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         valueStack = []

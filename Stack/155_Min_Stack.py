@@ -1,3 +1,6 @@
+# Just a min stack implementation, only we have a separate stack for minimal values that are added and popped
+# accordingly
+
 class MinStack:
 
     def __init__(self):
