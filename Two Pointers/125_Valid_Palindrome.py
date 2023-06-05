@@ -12,7 +12,10 @@ class Solution:
         return False
 
 
-# More Efficient 2 pointers
+# More Efficient 2 pointers We create 2 pointers and then we iterate threw the string until left pointer haven't
+# exceeded right pointer Inside we increment pointers until they reach any alphanumeric character Then we check if
+# they are same After that we increment in by one to move to the next character, so it won't infinitely check same
+# alphanumeric character
 class Solution2:
     def isPalindrome(self, s: str) -> bool:
         left = 0
