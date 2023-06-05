@@ -14,8 +14,9 @@ class Solution:
         return res
 
 
-# 1 pass solution
-
+# 1 pass solution We create a result list with all 1 and two variables: postfix and prefix. Each of them is
+# incremented one by one, so in each step both of them contains products on the left of them or on the right of them.
+# Then each element in res is multiplied by prefix and postfix 1 time.
 class Solution2:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         res = [1] * len(nums)
