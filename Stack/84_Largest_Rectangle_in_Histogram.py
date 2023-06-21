@@ -1,6 +1,12 @@
 from typing import List
 
-
+# We will  be iterating threw the heights. On each iteration we will put start as current i
+# and if stack is not empty and last height appended into the stack is bigger then current height
+# We will pop then and compare then with the current max. Then we move start to the index we just popped
+# When while condition is not true, meaning current height is same of bigger then last in the stack, we append
+# stack with current height, but index will be from the last element popped (eg. first element in heights with the same
+# height as current.
+# In the end if something left in the stack we compare it to the current max
 # Fast Stack Solution
 class Solution2:
     def largestRectangleArea(self, heights: List[int]) -> int:
@@ -18,8 +24,6 @@ class Solution2:
         for i, h in stack:
             maxS = max(maxS, h * (lenH - i))
         return maxS
-
-
 
 
 # Bruteforce
